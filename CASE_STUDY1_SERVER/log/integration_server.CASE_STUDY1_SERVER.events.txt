@@ -1,0 +1,15 @@
+2025-05-22 11:18:20.551698Z: [Thread 30628] (Msg 1/1) BIP1990I: Integration server 'CASE_STUDY1_SERVER' starting initialization; version '12.0.9.0' (64-bit) 
+2025-05-22 11:18:20.574942Z: [Thread 30628] (Msg 1/1) BIP9905I: Initializing resource managers. 
+2025-05-22 11:18:51.399532Z: [Thread 30628] (Msg 1/1) BIP9906I: Reading deployed resources. 
+2025-05-22 11:19:00.319182Z: [Thread 32968] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2025-05-22 11:19:00.370967Z: [Thread 32968] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2025-05-22 11:19:00.371925Z: [Thread 30628] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2025-05-22 11:20:32.850148Z: [Thread 14652] (Msg 1/1) BIP2152I: Configuration message received. 
+2025-05-22 11:20:33.089488Z: [Thread 14652] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CaseStudy1' of type 'Application'. 
+2025-05-22 11:20:33.118404Z: [Thread 14652] (Msg 1/1) BIP3314W: File node 'File Output' in message flow 'CaseStudy1Flow' cannot write to output directory ''. 
+2025-05-22 11:20:33.118954Z: [Thread 14652] (Msg 1/1) BIP3316W: File node 'File Output' in message flow 'CaseStudy1Flow' has no valid filename specified as property ''. 
+2025-05-22 11:20:33.548370Z: [Thread 14652] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CaseStudy1' of type 'Application'. 
+2025-05-22 11:20:33.548732Z: [Thread 14652] (Msg 1/1) BIP2269I: Deployed resource 'CaseStudy1Flow' (uuid='CaseStudy1Flow',type='MessageFlow') started successfully. 
+2025-05-22 11:20:33.548816Z: [Thread 14652] (Msg 1/1) BIP9332I: Application 'CaseStudy1' has been created successfully. 
+2025-05-22 11:20:33.548870Z: [Thread 14652] (Msg 1/1) BIP9326I: The source 'CaseStudy1project.generated.bar' has been successfully deployed. 
+2025-05-22 11:20:33.549130Z: [Thread 14652] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 

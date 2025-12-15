@@ -1,0 +1,74 @@
+
+
+
+
+
+
+CREATE COMPUTE MODULE CaseStudy1Flow_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- Get Merchants
+		DECLARE uniqueMerchants ROW;
+		DECLARE itemRef REFERENCE TO InputRoot.XMLNSC.Items.Item[1];
+		-- MOVE itemRef FIRSTCHILD NAME 'Item';
+		WHILE LASTMOVE(itemRef) DO
+			-- Check if Merchant is already exist in uniqueMerchants
+--			DECLARE index INTEGER;
+--			SET index = getMerchantIndex(uniqueMerchants, itemRef.Merchant);
+			IF NOT EXISTS(SELECT M FROM uniqueMerchants.name[] AS M where M = itemRef.Merchant) THEN
+				-- Not Exist then add marchant
+				DECLARE merchantRef REFERENCE TO uniqueMerchants;
+				CREATE LASTCHILD OF merchantRef NAME 'name';
+				MOVE merchantRef LASTCHILD;
+				SET merchantRef = itemRef.Merchant;
+			END IF;
+			-- Increment/move
+			MOVE itemRef NEXTSIBLING REPEAT TYPE;
+		END WHILE;
+		-- Write To Files
+		DECLARE merchantRef REFERENCE TO uniqueMerchants;
+		MOVE merchantRef FIRSTCHILD;
+
+		WHILE LASTMOVE(merchantRef) DO
+			-- Set OutputRoot
+			SET OutputRoot.XMLNSC.Merchant.(XMLNSC.Attribute)name = merchantRef;
+			SET OutputRoot.XMLNSC.Merchant.ItemsList.Item[] = SELECT
+			I.ItemType AS (XMLNSC.Attribute)Type,
+			I.ItemPrice AS (XMLNSC.Attribute)Price
+			FROM InputRoot.XMLNSC.Items.Item[] AS I
+			WHERE I.Merchant = merchantRef;
+			
+			-- Set Local Enviroment
+			SET OutputLocalEnvironment.Destination.File.Directory = 'E:\Work\temp\CaseStudy';
+			SET OutputLocalEnvironment.Destination.File.Name = CAST(merchantRef AS CHARACTER) || '.xml';
+			
+			-- Write the output to file
+			PROPAGATE TO TERMINAL 'out';
+
+			-- increment/move
+			MOVE merchantRef NEXTSIBLING REPEAT TYPE;
+		END WHILE;
+
+		RETURN FALSE;
+	END;
+
+	CREATE FUNCTION getMerchantIndex(merchantList REFERENCE, merchantName CHARACTER)
+	RETURNS INTEGER
+	BEGIN
+		DECLARE i INTEGER 1;
+		DECLARE merchantRef REFERENCE TO merchantList;
+		MOVE merchantRef FIRSTCHILD;
+
+		WHILE LASTMOVE(merchantRef) DO
+			IF merchantRef = merchantName THEN
+				RETURN i;
+			END IF;
+
+			SET i = i + 1;
+			MOVE merchantRef NEXTSIBLING REPEAT TYPE;
+		END WHILE;
+
+		RETURN -1;
+	END;
+
+END MODULE;

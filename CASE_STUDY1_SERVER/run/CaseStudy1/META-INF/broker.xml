@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="E:\Work\ACE_Exercies\CaseStudy1\GeneratedBarFiles\CaseStudy1project.generated.bar" deployTimestamp="2025-05-22 11:20:32">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="CaseStudy1Flow" deployBarfile="E:\Work\ACE_Exercies\CaseStudy1\GeneratedBarFiles\CaseStudy1project.generated.bar" deployTimestamp="2025-05-22 11:20:32">
+    <ConfigurableProperty uri="CaseStudy1Flow#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.customDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.fileFtp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.fileFtpDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.fileFtpServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.fileFtpUser">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.outputDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.outputFilename">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.recordDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.remoteTransferType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.requestDirectoryLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.requestNameLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#File Output.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.SSLCertificateLabel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.SSLCipherSpec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.SSLPeerName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.channelName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.connection">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.destinationQueueManagerName" override="ACEQM">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.listenerPortNumber">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.queueManagerHostname">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.queueName" override="ITEMS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.resetBrowseTimeout">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.serializationToken">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.topicProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.useSSL">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#MQ Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="CaseStudy1Flow#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>
